@@ -1,4 +1,4 @@
-// SCROLL FLUIDE SUR LES LIENS
+
 document.querySelectorAll('nav a').forEach(link => {
   link.addEventListener('click', function(e) {
     e.preventDefault();
@@ -10,10 +10,7 @@ document.querySelectorAll('nav a').forEach(link => {
       behavior: 'smooth'
     });
   });
-});
 
-
-// ANIMATION AU SCROLL
 const sections = document.querySelectorAll("section");
 
 window.addEventListener("scroll", () => {
@@ -29,15 +26,12 @@ window.addEventListener("scroll", () => {
 });
 
 
-// INITIALISATION (sections cachées au début)
 sections.forEach(section => {
   section.style.opacity = "0";
   section.style.transform = "translateY(50px)";
   section.style.transition = "0.6s ease";
 });
 
-
-// MESSAGE APRÈS ENVOI DU FORMULAIRE
 const form = document.querySelector("form");
 
 form.addEventListener("submit", function(e) {
@@ -49,7 +43,6 @@ form.addEventListener("submit", function(e) {
 });
 
 
-// EFFET SUR LE BOUTON (HOVER AVANCÉ)
 const button = document.querySelector("button");
 
 button.addEventListener("mouseover", () => {

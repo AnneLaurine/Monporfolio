@@ -1,26 +1,25 @@
-/* RESET */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', sans-serif;
 }
-
-/* BODY */
 body {
-  background: #f5f5f5;
+  background: #e1d1d1;
   color: #222;
   line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 60px;
   background: #fff;
-  border-bottom: 1px solid #ddd;
+  border-top: 3px solid #b30c0c;
+  border-left: 4px solid #b30c0c ;
 }
 
 .logo {
@@ -32,36 +31,42 @@ header {
   color: #f26c5e;
 }
 
-/* NAVIGATION */
 nav a {
   margin-left: 20px;
   text-decoration: none;
   color: #222;
   font-weight: 500;
   transition: 0.3s;
+  font-size: 15PX;
 }
 
 nav a:hover {
-  color: #f26c5e;
+  color: #b30c0c;
 }
 
-/* MAIN */
 main {
   padding: 60px;
 }
 
-/* NOM */
 .nom {
-  font-size: 28px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
+.nom span{
+  color: #f26c5e;
+ }
+.salutation{
+  color: #151516;
+  font-weight: bold;
+  text-align: end;
+  font-size: 15px;
 
-/* INTRO */
+}
+
 main p {
   margin-bottom: 40px;
 }
 
-/* SECTIONS */
 section {
   background: #fff;
   padding: 30px;
@@ -70,7 +75,6 @@ section {
   position: relative;
 }
 
-/* BANDE COLOREE STYLE MODERNE */
 section::before {
   content: "";
   position: absolute;
@@ -82,25 +86,21 @@ section::before {
   border-radius: 10px 0 0 10px;
 }
 
-/* TITRES */
 h2 {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   color: #f26c5e;
 }
 
-/* COMPETENCES */
 .competences {
   margin-bottom: 10px;
   color: #333;
 }
 
-/* LISTES */
 ul {
   margin-left: 20px;
   margin-bottom: 15px;
 }
 
-/* TABLEAU */
 .tableau {
   width: 100%;
   border-collapse: collapse;
@@ -116,21 +116,8 @@ ul {
   color: white;
 }
 
-/* FORMULAIRE */
-form {
-  display: flex;
-  flex-direction: column;
-}
 
-form input,
-form textarea {
-  margin-bottom: 15px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
 
-/* BOUTON */
 button {
   background: #000;
   color: #fff;
@@ -144,10 +131,20 @@ button:hover {
   background: #f26c5e;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
-  background: #fff;
-  border-top: 1px solid #ddd;
+  background: #fff ;
+  border-bottom: 3px solid  #b30c0c; 
+  border-left: 4px solid #b30c0c;
+
+}
+.texte{
+  color:rgb(10, 10, 10);
+  font-size: 15px;
+  font-weight:bold ;
+}
+footer a:hover{
+  color: #b30c0c;
+  background-color: aqua;
 }
